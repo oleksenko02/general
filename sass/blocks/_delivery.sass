@@ -1,0 +1,35 @@
+.delivery
+    margin: 0 auto
+    padding-top: 250px 
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        justify-content: center
+
+    &__item
+        border-right: 6px solid grey 
+        &:last-child
+            border-right: none
+        &-img
+            height: 60px
+            width: 60px
+            display: block
+            margin: 0 auto  
+        &-title
+            text-align: center
+            margin-top: 10px
+            font-family: 'Josefin Slab'
+            font-size: 17px
+            line-height: 29px
+            font-weight: 400
+            color: #484a4b  
+            text-transform: uppercase
+        &-subtitle
+            text-align: center 
+            margin-top: 10px
+            font-family: 'Josefin Slab'
+            font-size: 25px
+            font-weight: bold
+            line-height: 29px
+            
+            color: #484a4b

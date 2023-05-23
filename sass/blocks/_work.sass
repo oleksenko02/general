@@ -1,0 +1,35 @@
+.work
+    padding-top: 120px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 300px)
+        justify-content: center
+        column-gap: 70px
+    &_title
+        margin-top: 20px
+        font-family: 'Josefin Slab'
+        font-size: 17px
+        line-height: 29px
+        font-weight: 400
+        color: #484a4b  
+        text-transform: uppercase
+        
+    &_list
+        padding-right: 40px
+        font-family: 'Montserrat Alternates'
+        font-size: 20px
+        line-height: 44px
+        font-weight: 400
+        letter-spacing: -0.05em
+        color: #765a33 
+        li
+            list-style: none
+            &::before
+                content: ''
+                display: inline-block
+                width: 10px
+                height: 3px
+                background-color: #c87e6b
+                vertical-align: middle
+                margin-right: 10px
+                margin-bottom: 4px

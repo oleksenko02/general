@@ -1,0 +1,37 @@
+.cake
+    
+    padding-top: 168px 
+
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 50px
+        justify-content: center
+        align-items: center
+        margin-top: 40px
+        
+    &__item
+        &-img
+            margin: 0 auto
+            display: block
+            width: 300px
+            height: 300px
+            border: 2px solid blue
+            &:hover
+                opacity: 0.7
+                transform: scale(1.05)
+                border: 2px solid violet
+        &-name
+            text-align: center
+            font-family: 'Playfair Bold'
+            margin-top: 35px
+            color: #484a4b
+            font-weight: 700
+            font-size: 30px
+    &__title
+        font-family: 'Playfair Bold'
+        font-weight: 400
+        letter-spacing: 0.025em
+        color: #484a4b
+        text-align: center
+        font-size: 50px

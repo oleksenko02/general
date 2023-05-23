@@ -1,0 +1,123 @@
+@media (max-width: 391px) 
+
+    header
+        nav
+            max-width: 390px
+            .logo
+                position: fixed
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                top: 0
+                left: -100%
+                width: 50%
+                height: 100vh
+                padding: 20px 15px
+                transition: 0.6s all
+                &_active
+                    left: 0
+                &_title
+                    font-size: 25px
+                    color: red
+                &_list
+                    padding-right: 0
+                    border: none
+                    margin: 10px 0
+    .subheader
+        padding: 0
+        .subheader__title
+            text-align: center  
+            font-size: 30px
+        .subheader__subtitle
+            font-size: 13px
+            text-align: center
+        .subheader__wrapper
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-columns: 1fr
+            max-width: 390px
+        .subheader__item
+            img
+                width: 175px
+                height: 200px
+            
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none 
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .offers
+        position: relative
+        &_item
+            width: 100%
+        &_title
+            
+            position: absolute
+            left: 65px
+            z-index: 2
+        &_subtitle
+            margin-top: 70px
+            font-size: 120px
+        &_minisubtitle
+            margin-top: 75px
+            font-size: 22px
+        &_item2
+            position: absolute
+    .order
+        width: 100%
+        &_wrapper
+            display: flex
+            flex-direction: column
+            margin: 0 auto
+            margin-top: 15px
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 15px
+            width: 170px
+
+        &_area
+            width: 300px
+            height: 400px
+            margin: 0 auto
+            margin-top: 30px
+            margin-right: 110px
+    .cake
+        .container
+            margin: 0 auto
+            
+    .delivery
+        &_block
+            flex-direction: column
+            margin: 0 auto
+            margin-left: 37px
+        &_wrapper
+            border-top: 6px solid grey 
+            border-right: none
+            &:first-child
+                border-top: none
+    .work
+        padding-top: 50px
+        .work__wrapper
+            grid-template-columns: repeat(1, 1fr)
+        .work__item
+            padding-right: 30px
